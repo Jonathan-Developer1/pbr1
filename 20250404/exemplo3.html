@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #51d3ed;
+        }
+
+        .cartao {
+            background-color: black;
+            border: 1px solid #00596b;
+            width: 15rem;
+            height: 20rem;
+            padding: 1rem;
+            margin: 2rem auto;
+            box-shadow: 0.5rem 0.5rem 0.3rem 0.1rem #51d3ed;
+        }
+
+        img{
+            width: 9rem;
+            height: 13rem;
+            display: block;
+            margin: 0 auto;
+        }
+        .preco{
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: right;
+        }
+    </style>
+
+<body>
+    <div class="cartao">
+        <script>
+            /*
+            *Estrutura sequencial
+            *comandos de saida
+            *Declaração de variável
+            */
+            var produto = prompt("informe o nome do produto:");
+            var descricao = prompt("informe o a descrição do produto :");
+            var preco = prompt("informe o preço do produto :");
+            document.write(`<img src="image.png" alt="Logo do Arroz">`)
+            document.write(`<h1 class="titulo"> ${produto}</h1>`)
+            document.write(`<article class="descricao"> ${descricao}</article>`)
+            document.write(`<aside class="preco">R$ ${preco}</aside>`)
+            
+        </script>
+
+    </div>
+</body>
+
+</html>
